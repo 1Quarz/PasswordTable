@@ -26,7 +26,7 @@ python passwordtable.py -c 10 -l 4 -o example.txt
 ```
 
 
-This example generates a table with 10 columns, where each randomly generated string is 5 characters long. 
+This example generates a table with 10 columns, where each randomly generated string is 4 characters long. 
 The table is saved to the file mytable.txt.
 
 Example Output:
