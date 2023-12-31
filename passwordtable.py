@@ -27,15 +27,13 @@ def GetRandomChar(n):
 table = PrettyTable()
 
 # Add the alphabet as the field names
-table.field_names = [" "] + [chr(ord('a') + i) for i in range(26)]
-
+table.field_names = [" "] + [(chr(ord('a') + i) + chr(ord('a') + i + 1) + chr(ord('a') + i + 2)).upper() for i in range(0, 21, 3)] + ["VWX", "YZ."]
 
 # Add the random characters as rows
 for index in range(columnLength):
-    row = [index+1] + [GetRandomChar(options.charLength) for _ in range(26)]
+    row = [index+1] + [GetRandomChar(options.charLength) for _ in range(9)]
     table.add_row(row)
-    table.add_row([" "] * 27)  # Add an empty row
-
+    table.add_row([" "] * 10)  # Add an empty row
 #Write to file 
 with open(options.output, 'w') as f:
     f.write(str(table))
