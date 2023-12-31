@@ -20,28 +20,38 @@ The script can be run with various options:
 -l or --charLength: Number of characters in the randomly generated strings (default is 3)
 -o or --output: Name of the output file (default is output.txt)
 ```
-
+Example:
 ```
-python passwordtable.py -c 10 -l 5 -o mytable.txt
+python passwordtable.py -c 8 -l 3 -o mytable.txt
 ```
 
-
-This example generates a table with 10 columns, where each randomly generated string is 5 characters long. 
+This example generates a table with 8 columns, where each randomly generated string is 3 characters long. 
 The table is saved to the file mytable.txt.
 
 Example Output:
 
 ```
 
-+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-|   |  a  |  b  |  c  |  d  |  e  |  f  |  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |  w  |  x  |  y  |  z  |
-+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 1 | abc | def | ghi | jkl | mno | pqr | stu | vwx | yz1 | 23a | bc4 | de5 | fg6 | hi7 | jk8 | lm9 | nop | qr0 | st1 | uv2 | wx3 | yz4 | 12a | bc5 | de6 | fg7 |
-|   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-| 2 | hij | klm | nop | qrs | tuv | wxy | z12 | 34a | bc5 | de6 | fg7 | hi8 | jk9 | lm0 | no1 | pq2 | rs3 | tu4 | vw5 | xy6 | z78 | 9ab | cd0 | ef1 | gh2 | ij3 |
-|   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-...
-+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
++---+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+|   | ABC | DEF | GHI | JKL | MNO | PQR | STU | VWX | YZ. |
++---+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 1 | H^C | Qyg | diQ | vQn | In] | R>B | QZ@ | JJG | I.+ |
+|   |     |     |     |     |     |     |     |     |     |
+| 2 | >q* | TZ8 | YM[ | }7' | BoW | Ozw | R7] | eBL | %[1 |
+|   |     |     |     |     |     |     |     |     |     |
+| 3 | Mpq | 6Nd | -k^ | #`V | 4f~ | RR, | 5u` | |%1 | JcE |
+|   |     |     |     |     |     |     |     |     |     |
+| 4 | uNu | [>/ | D$O | kqJ | {XW | "!A | F9h | 6Ky | d_: |
+|   |     |     |     |     |     |     |     |     |     |
+| 5 | g'w | (qK | yS7 | %!r | WXC | ,H< | XkH | tr| | hjh |
+|   |     |     |     |     |     |     |     |     |     |
+| 6 | ZPv | 9{4 | =TR | G3G | \$M | dff | 8Wj | 1Tg | YP< |
+|   |     |     |     |     |     |     |     |     |     |
+| 7 | &O@ | NJ] | 1sk | ,g[ | {5q | WK@ | Sp4 | d<B | 9m% |
+|   |     |     |     |     |     |     |     |     |     |
+| 8 | P|v | `F[ | VH& | Q5c | 5[m | ,eo | :AX | <~- | q9B |
+|   |     |     |     |     |     |     |     |     |     |
++---+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
 Output file: mytable.txt
 
