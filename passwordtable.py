@@ -3,6 +3,7 @@ import string
 import optparse
 from termcolor import colored
 from prettytable import PrettyTable
+from ImageDraw import DrawPasswordCard
 
 # Create a table
 table = PrettyTable()
@@ -38,6 +39,9 @@ for index in range(columnLength):
 with open(options.output, 'w') as f:
     f.write(str(table))
     f.close()
+
+# Draw the password card
+DrawPasswordCard(options.output)
 
 print(colored(table, 'green'))
 print(colored(f'Output file: {options.output}', 'blue'))
